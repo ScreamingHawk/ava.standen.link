@@ -1,0 +1,18 @@
+story {
+	display: block;
+	padding: 2rem;
+	border: 1px solid #ddd;
+	margin: 2rem;
+}
+
+page {
+	display: block;
+}
+
+body {
+	margin-bottom: 15px;
+}
+
+small {
+	margin-top: 15px;
+}

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+	<title>Run After It CYOA</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/cyo.js"></script>
+	<link rel="stylesheet" href="css/cyo.css">
+</head>
+
+<body ng-app="cyo">
+	<h1>Run After It</h1>
+
+	<story>
+		<h2>The story begins</h2>
+		<page intro>
+			<p>You are at school with the kitten.</p>
+			<button choice cage>Put in cage</button>
+			<button choice collar>Collar</button>
+			<button choice run-around>Run Around</button>
+		</page>
+		<page cage>
+			<p>The lock on the cage slips.</p>
+			<button choice play>Play</button>
+			<button choice md-catch>Mr D. Catch</button>
+		</page>
+		<page play>
+			<p>The bell rings.</p>
+			<p>The cat gets scared.</p>
+			<p><i>You lose!</i></p>
+			<button restart>Play again?</button>
+		</page>
+		<page md-catch>
+			<p>Mr D. catches the kitten.</p>
+			<p><i>You win!</i></p>
+			<button restart>Play again?</button>
+		</page>
+		<page collar>
+			<p>The kitten runs around the classroom.</p>
+			<button choice play-collar>Play</button>
+			<button choice watch>Watch</button>
+		</page>
+		<page watch>
+			<p>The kitten jumps out the window.</p>
+			<p><i>You lose!</i></p>
+			<button restart>Play again?</button>
+		</page>
+		<page play-collar>
+			<p>You watch the kitten play.</p>
+			<p><i>You win!</i></p>
+			<button restart>Play again?</button>
+		</page>
+		<page run-around>
+			<p>The kitten runs around the classroom.</p>
+			<p>The kitten jumps out the window.</p>
+			<button choice catch>Catch it</button>
+			<button choice run-after>Run</button>
+		</page>
+		<page run-after>
+			<p>You run after the kitten.</p>
+			<p>But you don't catch it.</p>
+			<p><i>You lose!</i></p>
+			<button restart>Play again?</button>
+		</page>
+		<page catch>
+			<p>You catch it.</p>
+			<p><i>You win!</i></p>
+			<button restart>Play again?</button>
+		</page>
+	</story>
+
+	<small>By Ava and <a href="https://michael.standen.link">Dad</a></small>
+</body>
+</html>
