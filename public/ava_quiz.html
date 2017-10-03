@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>The Ava Quiz</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="js/cyo.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" href="css/cyo.css">
+</head>
+
+<body ng-app="cyo">
+	<h1>How well do you know Ava?</h1>
+
+	<story>
+		<h2>You must answer correctly to continue or you start again...</h2>
+		<page intro>
+			<p>What is the name of Ava's baby sister?</p>
+			<button choice wrong>Brooklyn</button>
+			<button choice wrong>Kate</button>
+			<button choice q2>Chloe</button>
+		</page>
+		<page q2>
+			<p>When is Ava's birthday?</p>
+			<button choice wrong>16 August</button>
+			<button choice wrong>22 August</button>
+			<button choice q3>23 August</button>
+		</page>
+		<page q3>
+			<p>What is Ava's best school subject?</p>
+			<button choice wrong>Maths</button>
+			<button choice q4>Art</button>
+			<button choice wrong>Writing</button>
+		</page>
+		<page q4>
+			<p>What is Ava's best dance move?</p>
+			<button choice wrong>Cartwheel</button>
+			<button choice q5>Hand stand</button>
+			<button choice wrong>Flip</button>
+		</page>
+		<page q5>
+			<p>Where does Ava want to get married?</p>
+			<button choice wrong>New Zealand</button>
+			<button choice wrong>America</button>
+			<button choice q6>Bali</button>
+		</page>
+		<page q6>
+			<p>What does Avqa want the most for Christmas?</p>
+			<button choice q7>Phone</button>
+			<button choice wrong>Barbies</button>
+			<button choice wrong>Pony</button>
+		</page>
+		<page q7>
+			<p>What is Ava's favourite colour?</p>
+			<button choice wrong>Black</button>
+			<button choice q8>Red</button>
+			<button choice wrong>White</button>
+		</page>
+		<page q8>
+			<p>What is Ava's middle name?</p>
+			<button choice wrong>Brooklyn</button>
+			<button choice wrong>Chloe</button>
+			<button choice q9>Kate</button>
+		</page>
+		<page q9>
+			<p>What is Ava's favourite animal?</p>
+			<button choice q10>Kitten</button>
+			<button choice wrong>Zebra</button>
+			<button choice wrong>Lion</button>
+		</page>
+		<page q10>
+			<p>What is Ava's favourite song?</p>
+			<button choice q11>Baby</button>
+			<button choice wrong>We're going on a field trip</button>
+			<button choice wrong>Aotearoa</button>
+		</page>
+		<page q11>
+			<p>What is Ava's earliest memory?</p>
+			<button choice q12>Eating a bunch of marmite</button>
+			<button choice wrong>Saying "Mum"</button>
+			<button choice wrong>Walking</button>
+		</page>
+		<page q12>
+			<p><b>You win!</b></p>
+			<p>You must know Ava very well! Thanks for playing.</p>
+			<button restart>Try again?</button>
+		</page>
+		<page wrong>
+			<p><b>Wrong!</b></p>
+			<button restart>Try again?</button>
+		</page>
+	</story>
+
+	<small>By Ava and <a href="https://michael.standen.link">Dad</a></small>
+</body>
+</html>
