@@ -4,22 +4,38 @@ html, body {
 }
 
 body {
-	background-color: #706993;
+	background-color: #2E316B;
 	color: #F4E8C1;
 	overflow-x: hidden;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Audiowide', cursive;
 	text-align: center;
 	font-size: 1.5em;
 }
 a {
-	color: #A0C1B9;
+	color: #0AA28A;
 }
 
 h1 {
 	font-size: 7.5vmin;
 }
+h2 {
+	font-weight: normal;
+}
 
 main {
 	padding-top: 5vh;
 	min-height: 85vh;
+}
+
+button {
+	padding: 1em;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+.red {
+	color: #AB302E;
+}
+.green {
+	color: #0A6131;
 }
